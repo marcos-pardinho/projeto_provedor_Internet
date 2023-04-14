@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Designer responsivo-->
+  <title>Internet ilimitada</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <!-- Menu -->
+    <!-- o código abaixo foi adaptado de https://getbootstrap.com/docs/4.5/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <!-- Logo -->
+      <div class="container-fluid"> 
+        <a class="navbar-brand" href="#"><img src="imagem/logo1.png"></a>
+
+        <!-- Menu sanduíche: exibido em smartphones -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Opções menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quem-somos.html">Quem somos</a>
+            </li>
+
+            <!-- Menu suspenso -->
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="painel-de-planos.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> Planos de internet </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#planos">Alfa</a>
+                <a class="dropdown-item" href="#planos">Beta</a>
+                <a class="dropdown-item" href="#planos">Gama</a>
+                <a class="dropdown-item" href="#planos">Delta</a>
+                <a class="dropdown-item" href="#planos">Omega</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="O que deseja ?" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+
+    <!-- Apresentação -->
+    <div class="jumbotron mb-0">
+      <div class="row py-4">
+
+        <!-- Coluna deve ocupar 5/12 -->
+        <div class="col-12 col-lg-5">
+          <img src="imagem/imagem_principal.jpg" class="img-fluid img-thumbnail">
+        </div>
+
+        <!-- Coluna deve ocupar 7/12 -->
+        <div class="col-12 col-lg-7">
+          <h1 class="display-4">Faça sua <strong class="text-info">internet</strong> voar!</h1>
+          <p class="lead">Com os nossos planos de internet com até 600 Mb de velocidade</p>
+          <hr class="my-4">
+          <p class="text-muted">Conheça nossos planos combo com modem wifi grátis, telefone fixo, pacote de dados, TV
+            digital e o melhor serviço de atendimento da região. Planos combo à partir de R$ 50,00 sem taxa de instalação.
+          </p>
+          <a class="btn btn-info btn-lg" href="planos.html" role="button">Conheça nossos planos</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

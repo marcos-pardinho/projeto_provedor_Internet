@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+
+    
+
+
+</head>
+
+<body>
+
+    <script>
+
+        var lat;
+        var lon;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function(posicao) {
+                    console.log(posicao);
+
+                    lat = posicao.coords.latitude;
+                    lon = posicao.coords.longitude;
+
+                    console.log(lat, lon);
+
+                }
+            );
+        }
+    </script>
+
+
+</body>
+
+</html>

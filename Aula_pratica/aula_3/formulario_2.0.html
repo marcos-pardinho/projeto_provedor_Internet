@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2.0</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulário 2.0</legend>
+
+            <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" size="20" required></p>
+            <p><label for="hidden">Hidden:</label> <input type="hidden" name="ip"></p>
+            <p><label for="busca">Busca:</label> <input type="search" name="q" id="busca" size="20" readonly></p>
+            <p><label for="telefone">Telefone:</label> <input type="tel" name="tel" id="telefone" size="20" required>
+            </p>
+            <p><label for="url">URL:</label> <input type="url" name="url" id="url" required></p>
+            <p><label for="email">E_mail:</label> <input type="email" name="email" id="email" size="20" required></p>
+            <p><label for="senha">Senha:</label> <input type="password" name="pass" id="senha" size="20" required></p>
+            <p><label for="data">Data:</label> <input type="date" name="data" id="data" required>
+            <p><label for="hora">Hora:</label> <input type="time" name="hora" id="hora" required>
+            <p><label for="numero">Número:</label> <input type="number" name="numero" id="numero" required></p>
+            <p><label for="intervalo">Intervalo:</label> <input type="range" name="faixa" id="intervalo" required></p>
+            <p><label for="cor">Cor:</label> <input type="color" name="cor" id="cor" required></p>
+            <p><label for="">Multipla Escolha:</label> <input type="checkbox" name="abc">Vermelho</p>
+            <p><label for="">Escolha Única:</label> <input type="radio" name="cde">Sim</p>
+            <p><label for="Arquivo">Arquivo:</label> <input type="file" name="arquivo" id="arquivo" required></p>
+            <p><input type="submit" value="ENVIAR"></p>
+            <p><input type="image" src="imagem/botao.png" value="MEU BOTÃO"></p>
+            <p><input type="reset" value="LIMPAR"></p>
+            <p><input type="button" value="OK"></p>
+
+            <button type="button">MEU BOTÃO</button>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleção</legend>
+
+            <select>
+                <optgroup label="Frutas">
+                    <option>Abacaxi</option>
+                    <option>Banana</option>
+                    <option>Laranja</option>
+                </optgroup>
+
+                <optgroup label="Cores">
+                    <option>Vermelha</option>
+                    <option>Verde</option>
+                    <option>Azul</option>
+                </optgroup>
+
+                <optgroup label="Bairros">
+                    <option>Leme</option>
+                    <option>Urca</option>
+                </optgroup>
+
+            </select>
+
+            <label for="sexo">Sexo:
+                <input name="sexo" list="sexos">
+                <datalist id="sexos">
+                    <option value="Feminino"></option>
+                    <option value="Masculino"></option>
+                </datalist>
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <label for="msg">Sexo:</label><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+
+    </form>
+
+
+</body>
+
+</html>

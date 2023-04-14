@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main>
+
+    <a href="index.html">Voltar</a>
+
+    <section class="container pb-5 text-center" id="planos">
+
+      <h1 class="p-5">Tabela de planos</h1>
+
+      <script>
+        // Declara uma array que recebe os 7 dias da semana
+        let semana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+
+        // Coleta a data atual
+        let d = new Date();
+
+        // Cria uma variável numero_dia que utiliza a função get Day() para pegar o nome do dia da semana
+        let numero_dia = d.getDay();
+
+        // Pega o valor do dia com base no array semana
+        let dia = semana[numero_dia];
+
+        // Mensagem que será exibida na tela (Bootstrap)
+        let Mensagem = '<div class="alert alert-success" role="alert"><strong>Promoção !</strong> Assine qualquer plano hoje e receba 30 dias gratis !</div>';
+
+        // Comando condicional para verificar se é quarta-feira
+        if (dia == "Quarta-Feira") {
+          document.write(Mensagem)
+        }
+      </script>
+
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img-top bg-light text-muted text-center py-5">
+              <h1>R$ 50</h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Plano Alfa</h5>
+              <p class="card-text">Internet de 100 Mb de velocidade com instalação grátis.</p>
+              <a href="#" class="btn btn-info">Assine já!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img-top bg-light text-muted text-center py-5">
+              <h1>R$ 75</h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Plano Beta</h5>
+              <p class="card-text">Internet de 200 MB de velocidade com instalação grátis</p>
+              <a href="#" class="btn btn-info">Assine já!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img-top bg-light text-muted text-center py-5">
+              <h1>R$ 120</h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Plano Gama</h5>
+              <p class="card-text">Internet de 300 MB de velocidade com instalação grátis</p>
+              <a href="#" class="btn btn-info">Assine já!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <div class="card">
+            <div class="card-img-top bg-light text-muted text-center py-5">
+              <h1>R$ 150</h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Plano Delta</h5>
+              <p class="card-text">Internet de 400 MB de velocidade com instalação grátis</p>
+              <a href="#" class="btn btn-info">Assine já!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card text-center my-5">
+        <div class="card-header bg-secondary text-light">CONHEÇA NOSSO PLANO EMPRESARIAL</div>
+        <div class="card-body">
+          <h5 class="card-title">Plano Omega</h5>
+          <p class="card-text col-8 offset-2">Internet de 600 MB de velocidade com instalação grátis, telefone fixo,
+            modem wifi, pacote de dados e TV digital com 150 canais. E ainda você irá contar com suporte dedicado 24
+            horas por dia, 7 dias sa semana. </p>
+          <a href="#" class="btn btn-danger">Assine já !</a>
+        </div>
+        <div class="card-footer text-muted">
+          Apenas R$ 199,00
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
